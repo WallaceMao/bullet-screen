@@ -1,0 +1,12 @@
+/* screen background */
+.screen-bg {background:rgba(0,0,0,0.5);z-index:1;}
+/* screen content */
+.screen-content {z-index: 10;}
+/* screen bullet track unordered list */
+ul.track-list {}
+/* screen bullet track */
+ul.track-list li {height: 40px;font-size: 20px;color:#eee;line-height:40px;}
+/* single bullet */
+.bullet-item {}
+
+/* other customer css style */

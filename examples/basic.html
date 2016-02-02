@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <style>
+        * {margin:0;padding:0}
+
+        .screen{
+            position:fixed;left:0;right:0;bottom:0;height:200px;
+        }
+    </style>
+</head>
+<body>
+<div id="bulletScreen" class="screen"></div>
+<script type="text/javascript" src="../src/js/bulletScreen.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        walletScreen.init({
+            elementId: 'bulletScreen',
+            trackCount: 3,
+            speed: 100,
+            initData: [
+                {text: 'welcome to my bullet-screen!'},
+                {text: '欢迎来到我的弹幕！'},
+                {text: 'Herzlich Willkommen!'},
+                {text: 'Добро пожаловать'},
+                {text: 'Bienvenue'},
+                {text: 'ようこそ'},
+                {text: '환영 합니다'}
+            ]
+        });
+    }
+
+    setTimeout(function(){
+        walletScreen.add([
+            {text: 'welcome to my bullet-screen!'},
+            {text: '欢迎来到我的弹幕！'},
+            {text: 'Herzlich Willkommen!'},
+            {text: 'Добро пожаловать'},
+            {text: 'Bienvenue'},
+            {text: 'ようこそ'},
+            {text: '환영 합니다'}
+        ])
+    }, 10000);
+</script>
+</body>
+</html>
